@@ -1,0 +1,68 @@
+.why {
+  padding: 80px 0;
+  background: #e4f3d9;
+
+  .caption {
+    line-height: 1.16667;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+  }
+
+  .image-video {
+    position: relative;
+
+    .fa-play {
+      font-size: 54px;
+      color: #fff;
+      position: absolute;
+      top: calc( 50% - 27px);
+      left: calc( 50% - 27px);
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .card-cust {
+    display: inline-block;
+    border: 3px solid #2e9233;
+    padding: 10px;
+    margin: 10px 0;
+    background: #fff;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    p {
+      line-height: 25px;
+      font-weight: 600;
+      letter-spacing: -.02em;
+      font-size: 19px;
+      color: #000;
+      max-width: 170px;
+      margin-left: 20px;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+
+  .text {
+    line-height: 20px;
+    font-weight: normal;
+    letter-spacing: -.02em;
+    font-size: 16px;
+    color: #000;
+    max-width: 277px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+}

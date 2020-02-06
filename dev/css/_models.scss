@@ -1,0 +1,243 @@
+//////////////////////////MODELS BEGIN////////////////////////
+
+.concrete, .posts, .decorative{
+  padding: 80px 0;
+  background-color: #FFFFFF;
+
+  .caption {
+    line-height: 1.16667;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    line-height: 1.16667;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #2e9233;
+  }
+
+    p {
+      line-height: 20px;
+      font-weight: normal;
+      letter-spacing: -.02em;
+      font-size: 16px;
+      color: #000;
+      margin-top: 20px;
+      max-width: 495px;
+    }
+
+  .button-text p {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .button {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 6px;
+    outline: none !important;
+    background: #2e9233;
+    border: 1px solid #2e9233;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    .btn {
+      border: none;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 9px 50px;
+      text-align: center;
+      color: #fff;;
+      outline: none !important;
+    }
+
+    &:hover {
+      transition: .2s;
+      background: #fff;
+      .btn {
+        color: #2e9233;
+      }
+    }
+  }
+
+  .gallery-image {
+    max-width: 535px;
+    max-height: 429px;
+  }
+
+  .models-slider {
+    outline: none;
+  }
+
+
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1px;
+  }
+
+  .slick-prev.slick-arrow {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev, .slick-next {
+    top: 50%;
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #2e9233;
+    border: 1px solid #2e9233;
+    outline: none;
+    background: #fff;
+    z-index: 1;
+  }
+
+  .slick-prev:active, .slick-next:active {
+    color: #fff;
+    border: 1px solid #2e9233;
+    background: #2e9233;
+  }
+  ///slick-prev slick-next end
+
+  //slider dots begin
+
+  .slick-dots {
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    right: -3.5%;
+  }
+
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 23px 0 5px;
+    border: 1px #2e9233 solid;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active {
+    position: relative;
+    display: inline-block;
+    border: 1px #2e9233 solid;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #2e9233;
+    border-radius: 50%;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+  }
+
+  //slider dots end
+
+  ////media
+
+  @media (max-width: 991px) {
+    .title {
+      justify-content: center;
+    }
+
+    p {
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .button {
+      text-align: center;
+    }
+
+    .slick-dots {
+      right: 0;
+    }
+
+    .models-slider {
+      width: 66%;
+      margin: 0 auto;
+    }
+
+    .button {
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 80px 0;
+
+    .models-slider {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .caption {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .title p {
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .caption {
+      font-size: 18px;
+    }
+
+    .title .image-logo {
+      max-width: 100px;
+      max-height: 50px;
+    }
+  }
+
+  @media (max-width: 343px) {
+    .title p {
+      text-align: left;
+    }
+  }
+
+}
+
+.posts {
+  background: #e4f3d9;
+}
+
+//////////////////////////MODELS END////////////////////////

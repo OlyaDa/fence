@@ -1,0 +1,227 @@
+////////////////////////BANNER BEGIN////////////////////////
+
+.banner {
+  position: relative;
+  min-height: calc( 100vh - 95px );
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../public/images/banner.png") center no-repeat;
+  background-size: cover;
+  padding-top: 95px;
+
+  .banner-inner {
+    min-height: calc( 100vh - 95px );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .caption {
+    line-height: 1.16667;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 918px;
+    margin: 40px auto 15px;
+  }
+
+  .sub-caption {
+    line-height: 1.16667;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+
+  .circles {
+    justify-content: space-between;
+    align-items: baseline;
+    display: contents;
+    margin: 0 auto 20px;
+  }
+
+  .circles-holder {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+      text-decoration: none;
+    }
+
+    .circle {
+      height: 130px;
+      width: 130px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 35px;
+      margin-left: 35px;
+      border: 3px solid #2e9233;
+
+      .icon-roof {
+        font-size: 75px;
+      }
+
+      .icon-door, .icon-truck, .icon-contract {
+        font-size: 70px;
+      }
+    }
+
+    .text {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 151.5%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 17px;
+      max-width: 117px;
+      margin-bottom: 0;
+    }
+  }
+
+  .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      font-size: 20px;
+      letter-spacing: -.02em;
+      color: #fff;
+      max-width: 480px;
+      text-align: center;
+      margin-bottom: 5px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .button {
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 6px;
+      outline: none !important;
+      background: #2e9233;
+      border: 1px solid #2e9233;
+
+      .btn {
+        border: none;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        padding: 9px 50px;
+        text-align: center;
+        color: #fff;;
+        outline: none !important;
+      }
+
+      &:hover {
+        transition: .2s;
+        background: #fff;
+        .btn {
+          color: #2e9233;
+        }
+      }
+    }
+
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  ////media
+
+  @media (max-width: 991px) {
+    .caption {
+      font-size: 40px;
+    }
+
+    .sub-caption {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .item .circle {
+      height: 75px;
+      width: 75px;
+    }
+
+    .item .circle .icon-door, .item .circle .icon-truck, .item .circle .icon-contract {
+      font-size: 40px;
+    }
+
+    .item .text {
+      max-width: 160px;
+      line-height: 140.5%;
+    }
+  }
+
+  @media (max-width: 575px) {
+
+    .captions {
+      margin-top: 20px;
+    }
+
+    .caption {
+      font-size: 25px;
+    }
+
+    .order {
+      margin-bottom: 5px;
+    }
+
+    .circles-holder {
+      margin-bottom: 10px;
+    }
+
+    .banner-inner {
+      justify-content: space-between;
+    }
+
+    .sub-caption {
+      font-size: 18px;
+    }
+
+    .item .circle {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .item .text {
+      margin-top: 8px;
+    }
+
+    .order p {
+      font-size: 15px;
+    }
+
+    .order .btn {
+      font-size: 12px;
+    }
+  }
+
+}
