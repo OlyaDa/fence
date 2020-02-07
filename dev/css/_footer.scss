@@ -1,27 +1,24 @@
-//////////////////////////FOOTER BEGIN////////////////////////
-$font_text: 'Montserrat', sans-serif;
 
 .footer {
   padding: 80px 0 40px 0;
   position: relative;
-  background-color: #f5f5f5;
+  background-color: #e4f3d9;
 
   .caption {
-    margin-top: 0;
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-family: $font_text;
+    line-height: 1.16667;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 30px;
     letter-spacing: -.02em;
-    color: #000;
+    font-size: 32px;
     text-align: center;
+    color: #024220;
+    margin-bottom: 40px;
   }
 
   .contact {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
 
     .phone {
       display: block;
@@ -32,25 +29,22 @@ $font_text: 'Montserrat', sans-serif;
     }
 
     .contact-title {
-      font-family: "Lato", sans-serif;
-      font-style: normal;
+      font-size: 15px;
       font-weight: bold;
-      font-size: 12px;
-      line-height: 151.5%;
-      letter-spacing: 0.1em;
+      line-height: 24px;
+      letter-spacing: -.02em;
       text-transform: uppercase;
       margin-bottom: 5px;
-      color: #c4956a;
+      color: #000;
     }
 
     .contact-text, .contact-text a {
-      font-family: $font_text;
-      font-size: 14px;
-      line-height: 1.6;
-      font-weight: 400;
       letter-spacing: -.02em;
-      color: rgba(0, 0, 0, 0.7);
+      color: #000;
       margin-bottom: 0;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
     }
 
     .contact-text a {
@@ -65,31 +59,31 @@ $font_text: 'Montserrat', sans-serif;
     background: #fff;
     padding: 40px 40px 40px 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 370px;
+    margin: auto;
+    text-align: center;
 
     .form-title {
-      font-weight: 700;
-      font-family: $font_text;
+      line-height: 20px;
+      font-weight: normal;
       letter-spacing: -.02em;
-      color: #000;
       font-size: 20px;
-      margin-bottom: 20px;
+      color: #000;
       text-align: center;
+      margin-bottom: 25px;
     }
 
     input {
       display: block;
       width: 100%;
       min-height: 42px;
-      padding: 9px 0;
+      padding: 9px 0 9px 20px;
       font-size: 15px;
       font-weight: 500;
       line-height: 24px;
       letter-spacing: -.02em;
       border-radius: 0;
-      border: none;
-      border-bottom: 1px solid #08203E;
-      font-family: $font_text;
+      border: 1px solid #000;
       font-style: normal;
       background: transparent;
       outline: none;
@@ -117,20 +111,19 @@ $font_text: 'Montserrat', sans-serif;
   button {
     display: inline-block;
     padding: 10px 30px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
-    border: 1px solid #c4956a;
-    font-family: $font_text;
+    border: 1px solid #2e9233;
     font-weight: 700;
     letter-spacing: -.02em;
-    text-transform: uppercase;
     text-align: center;
-    background-color: #c4956a;
+    background-color: #2e9233;
     color: #FFFFFF;
     border-radius: 0;
     &:hover {
       background-color: transparent;
-      color: #c4956a;
+      border: 1px solid #2e9233;
+      color: #2e9233;
     }
   }
 
@@ -139,7 +132,7 @@ $font_text: 'Montserrat', sans-serif;
 
     .social {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
 
       a {
@@ -149,109 +142,45 @@ $font_text: 'Montserrat', sans-serif;
       }
     }
 
-    .icon-facebook, .icon-inst {
+    .icon-facebook, .icon-instagram {
       font-size: 45px;
+      color: #2e9233;
     }
 
-    .icon-youtube {
+    .icon-yotube {
       font-size: 50px;
-    }
-
-    .logo {
-      max-width: 100px;
-      max-height: 50px;
-      margin-right: 0;
-    }
-
-    .logo-info {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
+      color: #2e9233;
     }
   }
 
   ///media
 
   @media (max-width: 991px) {
-    .contact {
-      align-items: center;
-      margin-bottom: 40px;
-
-      .contact-block {
-        display: flex;
-        width: 30%;
-        justify-content: space-between;
-      }
-    }
-
-    form {
-      display: block;
-      width: 50%;
-      margin: 40px auto 0 auto;
-      text-align: center;
-    }
-
-    .footer-bottom .social {
-      justify-content: space-evenly;
-      margin-bottom: 40px;
-    }
-
-    .footer-bottom .logo-info {
-      justify-content: space-evenly;
-    }
-
-  }
-
-  @media (max-width: 768px) {
-    padding: 40px 0 20px 0;
-
     .caption {
-      margin-bottom: 20px;
-      font-size: 20px;
-    }
-
-    .contact {
-      margin-bottom: 20px;
-
-      .contact-block {
-        width: 40%;
-      }
+      font-size: 28px;
     }
 
     form {
-      width: 80%;
-      margin: 20px auto 0 auto;
-    }
-
-    .footer-bottom .social {
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
   }
 
   @media (max-width: 768px) {
+    padding: 40px 0;
 
     .caption {
-      font-size: 18px;
+      font-size: 24px;
+      margin-bottom: 20px;
     }
+  }
 
-    .contact {
-      .contact-block {
-        width: 50%;
-      }
+  @media (max-width: 480px) {
+    .caption {
+      font-size: 22px;
     }
 
     form {
       width: 100%;
-    }
-  }
-
-
-  @media (max-width: 480px) {
-    .contact {
-      .contact-block {
-        width: 80%;
-      }
     }
   }
 }

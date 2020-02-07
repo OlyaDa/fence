@@ -1,8 +1,7 @@
-
-.certificates {
+.works {
   padding: 80px 0;
-  position: relative;
   background-color: #fff;
+  text-align: center;
 
   .caption {
     line-height: 1.16667;
@@ -15,8 +14,31 @@
     margin-bottom: 40px;
   }
 
-  .gallery-image {
-    padding: 0 15px;
+  .slider {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .slider-nav {
+    margin-top: 20px;
+  }
+
+  .image {
+    padding: 0 5px;
+    outline: none !important;
+    &:focus{
+      outline: none !important;
+    }
+  }
+
+  .image-small {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .work-slider, .slider-nav, .slider-nav:focus, .slider-for, .slick-list, .slider {
+    outline: none !important;
   }
 
   ///slick-prev slick-next
@@ -26,15 +48,15 @@
   }
 
   .slick-prev.slick-arrow {
-    right: 60px;
+    left: 5px !important;
   }
 
   .slick-next {
-    right: 0;
+    right: 5px !important;
   }
 
   .slick-prev, .slick-next {
-    top: 108%;
+    top: 50%;
     font-size: 16px;
     line-height: 0;
     position: absolute;
@@ -58,51 +80,10 @@
   }
   ///slick-prev slick-next end
 
-  //slider dots begin
-
-  .slick-dots {
-    position: absolute;
-    bottom: -40px;
-    display: block;
-    width: 100%;
-    list-style: none;
-    text-align: center;
-    right: 0;
-  }
-
-
-  .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    padding: 0;
-    cursor: pointer;
-    margin: 0 10px 0 10px;
-    border: 1px #2e9233 solid;
-    border-radius: 50%;
-  }
-
-  .slick-dots li.slick-active {
-    position: relative;
-    display: inline-block;
-    border: 1px #2e9233 solid;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    background-color: #2e9233;
-    border-radius: 50%;
-  }
-
-  .slick-dots li button:before {
-    content: "";
-  }
-
-  //slider dots end
-
-  ////media
+  //media
 
   @media (max-width: 991px) {
+
     .caption {
       font-size: 28px;
     }
@@ -115,6 +96,17 @@
       font-size: 24px;
       margin-bottom: 20px;
     }
+
+    .slider-nav {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .slick-prev, .slick-next {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   @media (max-width: 480px) {
@@ -123,5 +115,3 @@
     }
   }
 }
-
-//////////////////////////CERTIFICATES END////////////////////////

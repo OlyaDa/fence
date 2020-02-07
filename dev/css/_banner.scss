@@ -1,4 +1,3 @@
-////////////////////////BANNER BEGIN////////////////////////
 
 .banner {
   position: relative;
@@ -122,13 +121,14 @@
       outline: none !important;
       background: #2e9233;
       border: 1px solid #2e9233;
+      margin-bottom: 20px;
 
       .btn {
         border: none;
-        font-weight: 600;
-        font-size: 14px;
+        font-weight: 700;
+        font-size: 15px;
         line-height: 19px;
-        padding: 9px 50px;
+        padding: 10px 50px;
         text-align: center;
         color: #fff;;
         outline: none !important;
@@ -156,11 +156,21 @@
 
   @media (max-width: 991px) {
     .caption {
-      font-size: 40px;
+      font-size: 35px;
     }
 
     .sub-caption {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 660px) {
+    .caption {
       font-size: 30px;
+    }
+
+    .sub-caption {
+      font-size: 20px;
     }
   }
 
@@ -170,7 +180,7 @@
       width: 75px;
     }
 
-    .item .circle .icon-door, .item .circle .icon-truck, .item .circle .icon-contract {
+    .icon-fance1:before, .icon-fence2:before, .icon-vase:before {
       font-size: 40px;
     }
 
@@ -183,11 +193,12 @@
   @media (max-width: 575px) {
 
     .captions {
-      margin-top: 20px;
+      //margin-top: 20px;
     }
 
     .caption {
       font-size: 25px;
+      margin-top: 0;
     }
 
     .order {
@@ -196,10 +207,6 @@
 
     .circles-holder {
       margin-bottom: 10px;
-    }
-
-    .banner-inner {
-      justify-content: space-between;
     }
 
     .sub-caption {

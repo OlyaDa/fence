@@ -1,75 +1,45 @@
-//////////////////////////OFFICE BEGIN////////////////////////
-$font_text: 'Montserrat', sans-serif;
 
 .reviews {
-  padding: 80px 0 80px 0;
+  padding: 80px 0;
   position: relative;
-  background-color: #f5f5f5;
+  background-color: #e4f3d9;
 
   .reviews-slider {
     outline: none;
-  }
-
-  .caption {
-    margin-top: 0;
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-family: $font_text;
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: -.02em;
-    color: #000;
     text-align: center;
   }
 
-  .reviews-title {
+  .slick-track {
     display: flex;
-    align-items: center;
+  }
 
-    .image {
-      max-width: 84px;
-      max-height: 84px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-    }
-
-    .title {
-      display: flex;
-      flex-direction: column;
-    }
+  .caption {
+    line-height: 1.16667;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    font-size: 32px;
+    text-align: center;
+    color: #024220;
+    margin-bottom: 40px;
+  }
 
     .name {
-      font-family: "Lato", sans-serif;
-      font-style: normal;
+      line-height: 20px;
       font-weight: bold;
-      font-size: 12px;
-      line-height: 151.5%;
-      text-align: center;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      letter-spacing: -.02em;
+      font-size: 20px;
       color: #000;
-      margin: 0 0 11px;
+      margin-top: 20px;
+      bottom: 20px;
     }
 
-    .town {
-      font-family: $font_text;
-      font-size: 15px;
-      line-height: 1.6;
-      font-weight: 400;
-      letter-spacing: -.02em;
-      color: #c4956a;
-      margin-bottom: 20px;
-    }
-  }
   .reviews-text {
-    font-family: $font_text;
-    font-size: 13px;
-    line-height: 1.6;
-    font-weight: 400;
+    line-height: 20px;
+    font-weight: normal;
     letter-spacing: -.02em;
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px;
-    max-width: 410px;
+    font-size: 16px;
+    color: #000;
   }
 
   .reviews-body {
@@ -103,8 +73,8 @@ $font_text: 'Montserrat', sans-serif;
     padding: 0;
     transform: translate(0, -50%);
     cursor: pointer;
-    color: #c4956a;
-    border: 1px solid #c4956a;
+    color: #2e9233;
+    border: 1px solid #2e9233;
     outline: none;
     background: #fff;
     z-index: 1;
@@ -112,8 +82,8 @@ $font_text: 'Montserrat', sans-serif;
 
   .slick-prev:active, .slick-next:active {
     color: #fff;
-    border: 1px solid #c4956a;
-    background: #c4956a;
+    border: 1px solid #2e9233;
+    background: #2e9233;
   }
   ///slick-prev slick-next end
 
@@ -121,7 +91,7 @@ $font_text: 'Montserrat', sans-serif;
 
   .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: -40px;
     display: block;
     width: 100%;
     list-style: none;
@@ -137,19 +107,19 @@ $font_text: 'Montserrat', sans-serif;
     height: 15px;
     padding: 0;
     cursor: pointer;
-    margin: 0 23px 0 5px;
-    border: 1px #c4956a solid;
+    margin: 0 10px 0 10px;
+    border: 1px #2e9233 solid;
     border-radius: 50%;
   }
 
   .slick-dots li.slick-active {
     position: relative;
     display: inline-block;
-    border: 1px #c4956a solid;
+    border: 1px #2e9233 solid;
     width: 15px;
     height: 15px;
     cursor: pointer;
-    background-color: #c4956a;
+    background-color: #2e9233;
     border-radius: 50%;
   }
 
@@ -162,33 +132,23 @@ $font_text: 'Montserrat', sans-serif;
   ////media
 
   @media (max-width: 991px) {
-    .reviews-body {
-      text-align: center;
-
-      .reviews-text {
-        max-width: 100%;
-      }
-
-      .reviews-title {
-        justify-content: center;
-      }
+    .caption {
+      font-size: 28px;
     }
   }
 
   @media (max-width: 768px) {
-    padding: 40px 0 50px 0;
+    padding: 40px 0;
 
     .caption {
+      font-size: 24px;
       margin-bottom: 20px;
-      font-size: 20px;
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 480px) {
     .caption {
-      font-size: 18px;
+      font-size: 22px;
     }
   }
 }
-
-//////////////////////////OFFICE END////////////////////////

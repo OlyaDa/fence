@@ -88,10 +88,9 @@
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     margin-top: 6px;
     outline: none !important;
-    //max-width: 178px;
-    //width: 100%;
     background: #fff;
     border: 1px solid #fff;
+    width: 220px;
 
     .btn {
       border: none;
@@ -102,6 +101,8 @@
       text-align: center;
       color: #2e9233;;
       outline: none !important;
+      margin-left: 0;
+      margin-bottom: 0;
     }
 
     &:hover {
@@ -135,7 +136,7 @@
 
     span {
       position: absolute;
-      background-color: #1D1D1D;
+      background-color: #fff;
       width: 100%;
       height: 2px;
       top: 50%;
@@ -144,7 +145,7 @@
       opacity: 1;
       &:before {
         position: absolute;
-        background: #1D1D1D;
+        background: #fff;
         width: 18px;
         height: 2px;
         bottom: 5px;
@@ -153,7 +154,7 @@
       }
       &:after{
         position: absolute;
-        background: #1D1D1D;
+        background: #fff;
         width: 18px;
         height: 2px;
         top: 5px;
@@ -168,14 +169,14 @@
       background-color: transparent;
       transition: all .3s ease-in-out;
       &:before {
-        background-color: #1D1D1D;
+        background-color: #fff;
         transform: rotate(-45deg);
         top: 0;
         position: absolute;
         transition: all .3s ease-in-out;
       }
       &:after {
-        background-color: #1D1D1D;
+        background-color: #fff;
         transform: rotate(45deg);
         top: 0;
         position: absolute;
@@ -196,14 +197,10 @@
 
   ///media
 
-  @media (max-width: 1146px) {
-    //.phone {
-    //  display: block;
-    //}
+  @media (max-width: 1050px) {
 
     .header__inner {
       display: flex;
-
       flex-wrap: wrap;
       flex-direction: column;
       align-items: inherit;
@@ -233,9 +230,14 @@
       letter-spacing: -.02em;
       font-style: normal;
       font-size: 15px;
-      color: #000000;
+      color: #fff;
       display: block;
       margin-bottom: 18px;
+      margin-left: 0;
+    }
+
+    .button {
+      margin-top: 25px;
     }
 
     .toggle-menu {
@@ -243,29 +245,11 @@
     }
   }
 
-  @media (max-width: 625px) {
-    .address p {
-      display: flex;
-    }
-
-  }
-
   @media (max-width: 460px) {
-    .logo {
-      max-width: 80px;
-      max-height: 30px;
-    }
     .address p {
       font-size: 12px;
       margin: 0 0 0 10px;
     }
-
-    .phone {
-      margin-left: 10px;
-      font-size: 13px;
-    }
   }
 
 }
-
-////////////////////////HEADER END////////////////////////

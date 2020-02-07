@@ -38,12 +38,10 @@ $('.certificates-slider').slick({
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
-    dots: true,
-    autoplay: false,
-    centerMode: true,
-    centerPadding: '0px',
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    dots: true,
+    autoplay: false,
     responsive: [
         {
             breakpoint: 992,
@@ -130,23 +128,28 @@ $(document).ready(function() {
     });
 });
 
-//gallery
-$(document).ready(function() {
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function(item) {
-                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-            }
-        }
-    });
+
+//parallax
+
+$('.parallax-window').parallax({imageSrc: 'images/bg-prod.png'});
+
+///slider for works
+
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    asNavFor: '.slider-nav'
+});
+
+$('.slider-nav').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: false,
+    arrows: false,
+    focusOnSelect: true
 });
